@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Organic Farming</title>
+  <link rel="stylesheet" href="organic_farming.css" />
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="soil_testing.html">Soil Testing</a></li>
+      <li><a href="organic_farming.html">Organic Farming</a></li>
+      <li><a href="digital_magazines.html">Magazines</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Organic Farming</h1>
+  </header>
+
+  <section class="intro">
+    <h2>Introduction to Organic Farming</h2>
+    <p>Organic farming is a method of farming system which primarily aims at cultivating the land and raising crops in such a way that the soil is kept alive and in good health.</p>
+  </section>
+
+  <section class="benefits">
+    <h2>Benefits of Organic Farming</h2>
+    <ul>
+      <li>No synthetic pesticides or fertilizers</li>
+      <li>Promotes biodiversity</li>
+      <li>Improves soil fertility and structure</li>
+      <li>Reduces pollution</li>
+    </ul>
+  </section>
+
+  <section class="products">
+    <h2>Available Organic Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>Organic Compost</h3>
+        <p>₹200</p>
+        <button class="add-to-cart" data-product="Organic Compost" data-price="200">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <h3>Neem Fertilizer</h3>
+        <p>₹150</p>
+        <button class="add-to-cart" data-product="Neem Fertilizer" data-price="150">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <h3>Vermicompost</h3>
+        <p>₹180</p>
+        <button class="add-to-cart" data-product="Vermicompost" data-price="180">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <h3>Organic Pesticide</h3>
+        <p>₹100</p>
+        <button class="add-to-cart" data-product="Organic Pesticide" data-price="100">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-list"></ul>
+    <div id="cart-total"></div>
+    <button id="checkout-btn">Checkout</button>
+  </section>
+
+  <!-- Payment Modal -->
+  <div id="payment-modal" class="modal">
+    <div class="modal-content">
+      <h2>Payment Details</h2>
+      <label><input type="radio" name="payment" value="COD" checked /> Cash on Delivery</label><br/>
+      <label><input type="radio" name="payment" value="UPI" /> UPI ID: <input type="text" /></label><br/>
+      <label><input type="radio" name="payment" value="Card" /> Card No: <input type="text" /></label><br/>
+      <button id="confirm-payment">Pay Now</button>
+    </div>
+  </div>
+
+  <script src="organic_farming.js"></script>
+</body>
+</html>
+

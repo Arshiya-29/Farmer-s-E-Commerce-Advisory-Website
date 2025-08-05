@@ -1,0 +1,14 @@
+<div id="sensor-display"></div>
+
+<script>
+fetch("http://localhost:5000/api/sensors")
+  .then(response => response.json())
+  .then(data => {
+    let html = "<h3>Sensor Data:</h3><ul>";
+    data.forEach(d => {
+      html += `<li>${d.sensor}: ${d.value} (at ${d.time})</li>`;
+    });
+    html += "</ul>";
+    document.getElementById("sensor-display").innerHTML = html;
+  });
+</script>

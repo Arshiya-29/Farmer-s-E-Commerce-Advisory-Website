@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soil Testing</title>
+  <link rel="stylesheet" href="soil_testing.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="soil_testing.html">Soil Testing</a></li>
+      <li><a href="organic_farming.html">Organic Farming</a></li>
+      <li><a href="digital_magazines.html">Magazines</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Soil Testing</h1>
+  </header>
+
+  <section class="form-section">
+    <h3>Book a Soil Test</h3>
+    <form id="soil-form">
+      <label>Name:</label>
+      <input type="text" id="name" required /><br/>
+
+      <label>Phone:</label>
+      <input type="tel" id="phone" required /><br/>
+
+      <label>Farm Location:</label>
+      <input type="text" id="location" required /><br/>
+
+      <label>Soil Type:</label>
+      <select id="soil-type">
+        <option>Clay</option>
+        <option>Sandy</option>
+        <option>Loamy</option>
+        <option>Other</option>
+      </select><br/>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="confirmation"></div>
+  </section>
+
+  <section class="sample-results">
+    <h3>Sample Soil Test Result</h3>
+    <ul>
+      <li>pH Level: 6.8</li>
+      <li>Nitrogen: Adequate</li>
+      <li>Phosphorus: Low</li>
+      <li>Potassium: High</li>
+    </ul>
+  </section>
+
+  <script src="soil_testing.js"></script>
+</body>
+</html>

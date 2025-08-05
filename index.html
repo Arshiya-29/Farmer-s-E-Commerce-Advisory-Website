@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eFarmer - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">eFarmer</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="soil_testing.html">Soil Testing</a></li>
+            <li><a href="organic_farming.html">Organic Farming</a></li>
+            <li><a href="digital_magazines.html">Digital Magazines</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to eFarmer Portal</h1>
+            <p>Your one-stop solution for smart farming and agriculture services</p>
+        </div>
+    </header>
+
+    <!-- Main Sections as Cards -->
+    <main class="card-container">
+    <div class="card" onclick="navigate('soil_testing.html')">
+        <img src="pictures/testing_soil.jpg" alt="Soil Testing">
+        <h2>Soil Testing</h2>
+    </div>
+    <div class="card" onclick="navigate('organic_farming.html')">
+        <img src="pictures/organic_farming.jpg" alt="Organic Farming">
+        <h2>Organic Farming</h2>
+    </div>
+    <div class="card" onclick="navigate('agriculture_events.html')">
+        <img src="pictures/calender.jpg" alt="Agriculture Events">
+        <h2>Agriculture<br>Events</h2>
+    </div>
+    <div class="card" onclick="navigate('digital_magazines.html')">
+        <img src="pictures/digital_magazine.jpg" alt="Digital Magazines">
+        <h2>Digital Magazines</h2>
+    </div>
+</main>
+<section class="why-choose-us" >
+  <h2>Why Choose Us?</h2>
+  <div class="features">
+    <div class="feature-box">
+      <img src="icons/database.png" alt="Research Icon">
+      <h3>Research Data</h3>
+      <p>We have a strong research team for the latest update. KH stores back years’ data to help the farmer to find solutions and resolve issues related to crop management.</p>
+    </div>
+    <div class="feature-box">
+      <img src="icons/gear.png" alt="Innovation Icon">
+      <h3>Innovation</h3>
+      <p>Our upcoming AI will be available 24×7 to serve farmers. Innovation become the need for farming and we are enthusiast innovators.</p>
+    </div>
+    <div class="feature-box">
+      <img src="icons/chat.jpg" alt="Support Icon">
+      <h3>Live Support & Solutions</h3>
+      <p>Suggestion and Answer is a unique tool to resolve farmers’ queries.</p>
+    </div>
+  </div>
+</section>
+
+<div class="service-section">
+  <h2>What We Do?</h2>
+  <div class="service-container">
+    <div class="service-card">
+      <img src="images/7314b6bc-f1d9-450c-978c-d909aa47292d.jpg" alt="Indian Crops">
+      <h3>Indian Crops</h3>
+      <a href="#">Read More</a>
+    </div>
+    <div class="service-card">
+      <img src="images/market.png" alt="Market Rate">
+      <h3>Market Rate</h3>
+      <a href="#">Read More</a>
+    </div>
+    <div class="service-card">
+      <img src="pictures/calender.jpg" alt="Agriculture Events">
+      <h3>Agriculture Events</h3>
+      <a href="#">Read More</a>
+    </div>
+    <div class="service-card">
+      <img src="images/training.jpg" alt="Training Programmes">
+      <h3>Training Programmes</h3>
+      <a href="#">Read More</a>
+    </div>
+    <div class="service-card">
+      <img src="pictures/digital_magazine.jpg" alt="Digital Magazine">
+      <h3>Digital Magazine</h3>
+      <a href="#">Read More</a>
+    </div>
+    <div class="service-card">
+      <img src="images/govt.png" alt="Government Schemes">
+      <h3>Government Schemes</h3>
+      <a href="#">Read More</a>
+    </div>
+    <div class="service-card">
+      <img src="images/organic_farming.jpg" alt="Organic Farming">
+      <h3>Organic Farming</h3>
+      <a href="#">Read More</a>
+    </div>
+    <div class="service-card">
+      <img src="images/weather.png" alt="Weather">
+      <h3>Weather</h3>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- LOAN SECTION -->
+<section class="loan-section">
+  <div class="loan-content">
+    <h1 class="loan-heading">Farmers Loans for Agriculture and Horticulture</h1>
+
+    <div class="loan-card-container">
+      <div class="loan-card">
+        <img src="images/bank-icon-vector-0.jpg" alt="Easy Loan" />
+        <p class="loan-card-title">Easy Loan Sanction</p>
+      </div>
+      <div class="loan-card">
+        <img src="images/subsidy.png" alt="Government Subsidy" />
+        <p class="loan-card-title">Government Subsidy</p>
+      </div>
+      <div class="loan-card">
+        <img src="images/growth-icon-22134.png" alt="High Value Loans" />
+        <p class="loan-card-title">High Value Loans</p>
+      </div>
+    </div>
+
+    <div class="loan-buttons">
+      <a href="#know-more" class="loan-btn">Know More</a>
+      <a href="#apply" class="loan-btn">Apply Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- FARMER MARKET SECTION -->
+
+
+<section class="market-section">
+  <h2 class="market-heading">Sell Your Produce Directly to Customers</h2>
+
+  <div class="market-cards-container">
+    <div class="market-card">
+      <img src="tomatoes.png" alt="Tomatoes">
+      <h3 class="market-product-name">Fresh Tomatoes</h3>
+      <p class="market-price">₹30/kg</p>
+<button class="market-btn add-to-cart" data-product="Fresh Tomatoes" data-price="30">Add to Cart</button>
+    </div>
+
+    <div class="market-card">
+      <img src="onions.png" alt="Onions">
+      <h3 class="market-product-name">Organic Onions</h3>
+      <p class="market-price">₹25/kg</p>
+<button class="market-btn add-to-cart" data-product="Organic Onions" data-price="25">Add to Cart</button>
+    </div>
+
+    <div class="market-card">
+      <img src="wheat.png" alt="Wheat">
+      <h3 class="market-product-name">Wheat Grains</h3>
+      <p class="market-price">₹40/kg</p>
+<button class="market-btn add-to-cart" data-product="Wheat Grains" data-price="40">Add to Cart</button>
+    </div>
+
+    <div class="market-card">
+      <img src="rice.png" alt="Rice">
+      <h3 class="market-product-name">Basmati Rice</h3>
+      <p class="market-price">₹60/kg</p>
+<button class="market-btn add-to-cart" data-product="Basmati Rice" data-price="60">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+
+<h3>Your Cart</h3>
+<ul id="cart-list"></ul>
+<p id="cart-total"><strong>Total: ₹0</strong></p>
+<button id="checkout-btn" class="market-btn">Checkout</button>
+
+
+<!-- Payment Modal -->
+<div id="payment-modal" class="modal">
+  <div class="modal-content">
+    <h3>Choose Payment Method</h3>
+    <select id="payment-method">
+      <option value="">-- Select --</option>
+      <option value="cod">Cash on Delivery</option>
+      <option value="upi">UPI</option>
+      <option value="card">Credit/Debit Card</option>
+    </select>
+
+    <div id="payment-details" style="margin-top: 10px;"></div>
+
+    <button id="confirm-payment">Make Payment</button>
+  </div>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IoT Crop Monitoring</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="iot-data">
+    <h2>Live Crop Monitoring (Simulated)</h2>
+    <div class="sensor-cards">
+      <div class="sensor-card">
+        <h3>Water Level</h3>
+        <p id="waterLevel">--</p>
+      </div>
+      <div class="sensor-card">
+        <h3>Soil Moisture</h3>
+        <p id="soilMoisture">--</p>
+      </div>
+      <div class="sensor-card">
+        <h3>pH Level</h3>
+        <p id="phLevel">--</p>
+      </div>
+    </div>
+
+  </section>
+
+  <h2>Enter Crop Details:</h2>
+  <form id="cropForm">
+    <input type="number" name="N" placeholder="Nitrogen" required><br>
+    <input type="number" name="P" placeholder="Phosphorus" required><br>
+    <input type="number" name="K" placeholder="Potassium" required><br>
+    <input type="number" name="temperature" placeholder="Temperature" required><br>
+    <input type="number" name="humidity" placeholder="Humidity" required><br>
+    <input type="number" name="ph" placeholder="pH" required><br>
+    <input type="number" name="rainfall" placeholder="Rainfall" required><br>
+    <button type="submit">Get Crop Recommendation</button>
+  </form>
+
+  <h3 id="result"></h3>
+
+  <footer>
+        <p>&copy; 2025 eFarmer Portal</p>
+    </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+</body>
+
+
+
+ 
+
+</html>

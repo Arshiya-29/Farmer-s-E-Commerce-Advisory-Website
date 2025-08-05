@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agriculture Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="soil_testing.html">Soil Testing</a></li>
+      <li><a href="organic_farming.html">Organic Farming</a></li>
+      <li><a href="digital_magazines.html">Magazines</a></li>
+    </ul>
+  </nav>
+   <header>
+    <h1>Agriculture Events</h1>
+  </header>
+
+  <section id="agri-events">
+    
+    <div class="event-card">
+      <h3>1. National Organic Farming Seminar</h3>
+      <p><strong>Date & Time:</strong> August 20, 2025 — 10:00 AM to 4:00 PM</p>
+      <p><strong>Location:</strong> Pusa Agricultural Campus, New Delhi</p>
+      <p>This event focuses on organic farming technologies and policy support for farmers.</p>
+      <button class="register-btn" onclick="openModal('Organic Farming Seminar')">Register</button>
+    </div>
+
+    <div class="event-card">
+      <h3>2. Precision Farming Training Camp</h3>
+      <p><strong>Date & Time:</strong> September 5, 2025 — 9:30 AM to 3:00 PM</p>
+      <p><strong>Location:</strong> Tamil Nadu Agricultural University, Coimbatore</p>
+      <p>Learn how to use modern tools like IoT and AI in smart farming techniques.</p>
+      <button class="register-btn" onclick="openModal('Precision Farming Camp')">Register</button>
+
+      
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="registration-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="event-name"></h2>
+      <form id="registration-form">
+        <label>Name:</label>
+        <input type="text" required>
+        <label>Email:</label>
+        <input type="email" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="agriculture_events.js"></script>
+</body>
+</html>
