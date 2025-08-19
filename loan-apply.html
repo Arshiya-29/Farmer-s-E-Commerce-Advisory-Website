@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for Loan</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .loan-apply-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      margin: 40px;
+      width:100vw;
+
+    }
+    .loan-form {
+      flex: 1;
+      max-width: 400px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .loan-form label {
+      font-weight: bold;
+    }
+    .loan-form input, .loan-form select, .loan-form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .loan-image {
+      flex: 1;
+      text-align: center;
+    }
+    .loan-image img {
+      width: 800px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Apply for Farmer Loan</h1>
+
+  <div class="loan-apply-container">
+    <!-- Loan Application Form -->
+    <form action="#" method="post" class="loan-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="aadhar">Aadhar Number:</label>
+      <input type="text" id="aadhar" name="aadhar" required>
+
+      <label for="loan-type">Loan Type:</label>
+      <select id="loan-type" name="loan-type">
+        <option>Easy Loan</option>
+        <option>Government Subsidy</option>
+        <option>High Value Loan</option>
+      </select>
+
+      <label for="amount">Loan Amount:</label>
+      <input type="number" id="amount" name="amount" required>
+
+      <label for="purpose">Purpose:</label>
+      <textarea id="purpose" name="purpose" rows="4" required></textarea>
+
+      <button type="submit" class="loan-btn">Submit Application</button>
+    </form>
+
+    <!-- Loan Image -->
+    <div class="loan-image">
+      <img src="images/farmer-loan.jpg" alt="Farmer Loan">
+      <p>Secure your future with easy and reliable loans for farming!</p>
+    </div>
+  </div>
+
+  <div style="text-align:center;">
+    <a href="index.html" class="loan-btn">⬅ Back to Home</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital e-Magazine</title>
+  <link rel="stylesheet" href="magazine.css">
+</head>
+<body>
+  <header class="magazine-header">
+    <h1>Digital e-Magazine</h1>
+    <p>
+      Stay updated on the latest trends, technologies, and best practices in agriculture.  
+      Subscribe to access expert insights, innovative solutions, and exclusive content crafted for modern farmers.
+    </p>
+  </header>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" onclick="filterMagazines('all')">All</button>
+    <button class="tab-btn" onclick="filterMagazines('magazine')">Magazines</button>
+    <button class="tab-btn" onclick="filterMagazines('paper')">Papers</button>
+    <button class="tab-btn" onclick="filterMagazines('free')">Free</button>
+  </div>
+
+  <!-- Magazine Grid -->
+  <section class="magazine-grid">
+    <div class="magazine-card magazine">
+      <img src="images/mag1.jpg" alt="Magazine 1">
+      <h3>Krishi Kranti</h3>
+      <p>A monthly magazine on agricultural innovation.</p>
+      <a href="#" class="btn">Read Now</a>
+    </div>
+
+    <div class="magazine-card paper">
+      <img src="images/mag2.jpg" alt="Magazine 2">
+      <h3>Agri Research</h3>
+      <p>Latest scientific research in farming & soil science.</p>
+      <a href="#" class="btn">Download</a>
+    </div>
+
+    <div class="magazine-card free">
+      <img src="images/mag3.jpg" alt="Magazine 3">
+      <h3>Organic Farming</h3>
+      <p>Free guide to sustainable and eco-friendly farming.</p>
+      <a href="#" class="btn">Read Free</a>
+    </div>
+
+    <div class="magazine-card magazine">
+      <img src="images/mag4.jpg" alt="Magazine 4">
+      <h3>Fasal Times</h3>
+      <p>Market updates, weather predictions, and expert tips.</p>
+      <a href="#" class="btn">Read Now</a>
+    </div>
+  </section>
+
+  <script src="magazine.js"></script>
+</body>
+</html>
